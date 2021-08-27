@@ -11,4 +11,8 @@ class Office {
   listRooms() {
     return this.meetingrooms;
   }
+
+  checkAvailable(room) {
+    return `Meeting rooms availability is ${room.available}`;
+  }
 }

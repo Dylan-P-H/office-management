@@ -16,4 +16,10 @@ describe('Office', () => {
     office.addRoom(meetingRoom3);
     expect(office.listRooms().length).toBe(3);
   });
+
+  it('can display a rooms availability', () => {
+    let office = new Office;
+    let meetingRoom4 = new MeetingRoom('Pleasant name', 3);
+    expect(office.checkAvailable(meetingRoom4)).toBe('Meeting rooms availability is true')
+  });
 });
